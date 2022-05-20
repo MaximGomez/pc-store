@@ -1,1 +1,74 @@
-$base-color: green;
+/*========== VARIABLES SCSS ==========*/
+
+$--header-height: 7.5rem;
+$--header--padding: 3rem;
+
+/*========== Colors ==========*/
+
+$--main-color: rgb(255, 255, 255);
+$--additional-color: rgb(145, 145, 145);
+$--body-color: rgb(0, 0, 0);
+$--body-color-light: rgb(18, 18, 18);
+$--gradient-color: linear-gradient(90deg, rgba(223, 89, 80, 1), rgba(69, 16, 70, 1));
+$--additional-gradient-color: linear-gradient(90deg, rgba(200, 154, 252, 1), rgba(124, 106, 250, 1));
+
+// /*========== Colors hover ==========*/
+
+$--gradient-color-hover: linear-gradient(90deg, rgba(223, 89, 80, 0.80), rgba(69, 16, 70, 0.80));
+$--additional-gradient-color-hover: linear-gradient(90deg, rgba(200, 154, 252, 0.80), rgba(124, 106, 250, 0.80));
+$--main-color-hover: rgba(255, 255, 255, 0.80);
+
+// /*========== Font and Typography ==========*/
+
+$--normal-text: 1rem 'Roboto', sans-serif;
+$--middle-text: 1.5rem 'Roboto', sans-serif;
+$--biggest-text: 700 4rem 'Roboto', sans-serif;
+
+// /*========== Font and Weight ==========*/
+
+$--font-medium: 300;
+$--font-semi-bold: 700;
+
+// /*========== z-index ==========*/
+
+$--z-tooltip: 9;
+$--z-fixed: 99;
+
+/*========== Media ==========*/
+
+// // xxl: 1400px,
+
+// @media screen and (min-width: 1400px) {
+//   $--biggest-font-size: ;
+//   $--big-font-size: ;
+//   $--normal-font-size: ;
+// }
+
+// // xl: 1200px,
+
+// @media screen and (min-width: 1200px) {
+//   $--biggest-font-size: ;
+//   $--big-font-size: ;
+//   $--normal-font-size: ;
+// }
+
+// // lg: 992px,
+
+// @media screen and (min-width: 992px) {
+//   $--biggest-font-size: ;
+//   $--big-font-size: ;
+//   $--normal-font-size: ;
+// }
+
+// // md: 768px,
+
+// @media (max-width: 768px) {
+// }
+
+// // sm: 576px
+
+// @media screen and (min-width: 768px) {
+//   $--biggest-font-size: ;
+//   $--big-font-size: ;
+//   $--normal-font-size: ;
+// }

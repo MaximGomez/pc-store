@@ -1,1 +1,27 @@
 @import 'vars.scss';
+
+@mixin btn__purple {
+  padding: 0.625rem 1.875rem;
+  border-radius: 3.125rem;
+  border: none;
+  background: $--additional-gradient-color;
+  color: $--main-color;
+  font: $--normal-text;
+  cursor: pointer;
+  &:hover {
+    background: $--additional-gradient-color-hover;
+  }
+}
+
+@mixin btn__pink {
+  padding: 0.625rem 1.875rem;
+  border-radius: 3.125rem;
+  border: none;
+  background: $--gradient-color;
+  color: $--main-color;
+  font: $--normal-text;
+  cursor: pointer;
+  &:hover {
+    background: $--gradient-color-hover;
+  }
+}

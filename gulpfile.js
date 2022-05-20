@@ -104,7 +104,7 @@ const scripts = () => {
 
 const img = () => {
 	return gulp.src(paths.images.src)
-    .pipe(newer(paths.images.dest))
+    // .pipe(newer(paths.images.dest))
 		.pipe(imagemin({
       progressive: true
     }))

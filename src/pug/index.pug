@@ -5,12 +5,67 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="css/style.min.css")
-    title assembly
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet")
+    title pc-store
   body 
     
     //- ===================  HEADER ======================
 
     header.header
+      nav.header__nav-wrap
+        .header__nav-content
+          .header__logo 
+            img(class="logo" id="logo" src="/img/logos/logo_svg.svg", alt="logo")
+          menu.header__menu#menu
+            a(class="menu__link" href="#") Heimat
+            a(class="menu__link" href="#") Kurse 
+            a(class="menu__link" href="#") Plan
+            a(class="menu__link" href="#") Lehrer 
+            a(class="menu__link" href="#") Newsletter
+            a(class="menu__link" href="#") Kontakte
+          .header__btn
+            button(class="btn" type="submit") Geh ins Büro
+          .header__burger-field#burger__field
+            .burger__menu#burger__menu
+              span.bar
+              span.bar
+              span.bar
+      .header__menu-popup#header__menu-popup
+        a(class="menu__link" href="#") Heimat
+        a(class="menu__link" href="#") Kurse 
+        a(class="menu__link" href="#") Plan
+        a(class="menu__link" href="#") Lehrer 
+        a(class="menu__link" href="#") Newsletter
+        a(class="menu__link" href="#") Kontakte
+      .header__content-wrapper
+        .header__content-container
+          .header__content
+            .header__title 
+              h1 Erste Klasse <br> für die Computermontage
+            .header__timer-content  
+              .header__timer-block 
+                .header__timer-number 
+                  h2 18
+                .header__timer-period 
+                  small Tage
+              .header__timer-block 
+                .header__timer-number 
+                  h2 18
+                .header__timer-period 
+                  small Std
+              .header__timer-block 
+                .header__timer-number 
+                  h2 18
+                .header__timer-period 
+                  small Minute
+              .header__timer-block 
+                .header__timer-number 
+                  h2 18
+                .header__timer-period 
+                  small Sekunden
+
 
     //- ===================  MAIN ========================
 

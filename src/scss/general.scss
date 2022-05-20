@@ -1,16 +1,58 @@
 @import 'normalize.css/normalize';
+@import 'vars.scss';
 @import 'header.scss';
 @import 'about.scss';
 @import 'footer.scss';
 @import 'media.scss';
 @import 'mixins.scss';
-@import 'vars.scss';
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box !important;
+*, *::before, *::after {
+  box-sizing: border-box;
 
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0;
+  margin: 0;
+}
+
+li, ul, ol {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button, small, strong {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font: $--biggest-text;
+
+  color: $--main-color;
+}
+
+a {
+  text-decoration: none;
+
+  font: $--normal-text; 
+  color: $--main-color;
+  &:hover {
+    transition: .4s;
+    color: $--main-color-hover;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*========== ProgressBar ==========*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $--additional-gradient-color;
+  border-radius: 0.25rem;
 }
