@@ -11,6 +11,7 @@ $--body-color: rgb(0, 0, 0);
 $--body-color-light: rgb(18, 18, 18);
 $--gradient-color: linear-gradient(90deg, rgba(223, 89, 80, 1), rgba(69, 16, 70, 1));
 $--additional-gradient-color: linear-gradient(90deg, rgba(200, 154, 252, 1), rgba(124, 106, 250, 1));
+$--additional-gradient-color-reverse: linear-gradient(-90deg, rgba(200, 154, 252, 1), rgba(124, 106, 250, 1));
 
 // /*========== Colors hover ==========*/
 
@@ -21,8 +22,19 @@ $--main-color-hover: rgba(255, 255, 255, 0.80);
 // /*========== Font and Typography ==========*/
 
 $--normal-text: 1rem 'Roboto', sans-serif;
-$--middle-text: 1.5rem 'Roboto', sans-serif;
+$--middle-text: 700 2.5rem 'Roboto', sans-serif;
+$--middle-text-thin: 300 2.5rem 'Roboto', sans-serif;
 $--biggest-text: 700 4rem 'Roboto', sans-serif;
+
+/*========== Font and Typography Mobile lg ==========*/
+
+$--biggest-text-mobile-lg: 700 3rem 'Roboto', sans-serif;
+$--middle-text-mobile-lg: 700 1.5rem 'Roboto', sans-serif;
+
+/*========== Font and Typography Mobile sm ==========*/
+
+$--biggest-text-mobile-sm: 700 1.75rem 'Roboto', sans-serif;
+$--normal-text-mobile-sm: .75rem 'Roboto', sans-serif;
 
 // /*========== Font and Weight ==========*/
 
@@ -38,19 +50,7 @@ $--z-fixed: 99;
 
 // // xxl: 1400px,
 
-// @media screen and (min-width: 1400px) {
-//   $--biggest-font-size: ;
-//   $--big-font-size: ;
-//   $--normal-font-size: ;
-// }
-
 // // xl: 1200px,
-
-// @media screen and (min-width: 1200px) {
-//   $--biggest-font-size: ;
-//   $--big-font-size: ;
-//   $--normal-font-size: ;
-// }
 
 // // lg: 992px,
 
@@ -66,9 +66,3 @@ $--z-fixed: 99;
 // }
 
 // // sm: 576px
-
-// @media screen and (min-width: 768px) {
-//   $--biggest-font-size: ;
-//   $--big-font-size: ;
-//   $--normal-font-size: ;
-// }

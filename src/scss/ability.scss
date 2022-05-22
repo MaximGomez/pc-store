@@ -1,0 +1,40 @@
+@import 'vars.scss';
+@import 'mixins.scss';
+
+.ability__content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .ability__content-title {
+    margin: 0 0 10rem 0;
+
+    text-align: center;
+  }
+  .ability__holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5rem;
+    .ability__container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 3.5rem;
+      .ability__container-image > img {
+        width: 7.5rem;
+      }
+      .ability__container-slogan {
+        text-align: center;
+        h2 {
+          font: $--middle-text-thin;
+        }
+      }
+      .ability__container-description {
+        text-align: center;
+        p {
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}

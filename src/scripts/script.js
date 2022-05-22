@@ -1,26 +1,23 @@
-console.log('2')
+console.log('2');
 
-const menu = document.querySelector("#burger__menu");
-const popup = document.querySelector("#header__menu-popup");
-const field = document.querySelector("#burger__field");
+const menu = document.querySelector(".header__burger-menu");
+const burger = document.querySelector(".header__burger-btn");
 const body = document.body;
-const nav = document.querySelector('.header__nav-wrap');
 
-menu.addEventListener("click", (e) => {
+
+burger.addEventListener("click", (e) => {
   e.preventDefault();
-  popup.classList.toggle("open");
-  field.classList.toggle("active");
+  menu.classList.toggle("open");
   body.classList.toggle("noscroll");
-  nav.classList.toggle("background");
+  burger.classList.toggle("active");
+  // nav.classList.toggle("background");
 });
 
 window.addEventListener('scroll', () => {
-  const scrolled = window.scrollY;
-  if (scrolled >= 50)
-  {
-    nav.style.background='rgba(0, 0, 0, 0.8)';
-  }
-  else {
-    nav.style.background='none';
-}})
+  let   scrolled = window.scrollY,
+        nav      = document.querySelector('.header__nav-wrap');
+
+  if (scrolled >= 20) { nav.style.background='rgba(0, 0, 0, 0.8)'; }
+  else { nav.style.background='none'; }}
+)
 

@@ -1,0 +1,63 @@
+@import 'vars.scss';
+@import 'mixins.scss';
+
+.quick__start-description {
+  padding: 3.5rem 0 5rem 0;
+}
+
+.quick__start-road {
+  width: 100%;
+  height: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: auto;
+  // grid-gap: 2rem;
+  grid-auto-rows: minmax(auto, 1fr);
+  justify-content: start;
+  align-items: center;
+  .road__container-first , .road__container-second , .road__container-third , .road__container-fourth {
+    display: flex;
+    flex-direction: column;
+    .road__container-number > h3 {
+      font: $--middle-text-thin;
+    }
+    .road__container-line {
+      display: flex;
+
+      width: 100%;
+
+      margin: 2rem 0;
+    }
+    .road__container-description {
+      margin: 0 2rem 0 0;
+    }
+  }
+  .road__container-first > .road__container-line {
+    height: 5rem;
+
+    background: $--additional-gradient-color;
+  }
+  .road__container-second > .road__container-line {
+    height: 3.75rem;
+
+    margin: 2.6rem 0;
+
+    background: $--additional-gradient-color-reverse;
+  }
+  .road__container-third > .road__container-line {
+    height: 1.875rem;
+
+    margin: 3.650rem 0;
+
+    background: $--additional-gradient-color;
+  }
+  .road__container-fourth > .road__container-line {
+    height: 0.625rem;
+
+    margin: 4.25rem 0;
+
+    background: $--additional-gradient-color-reverse;
+  }
+}
+

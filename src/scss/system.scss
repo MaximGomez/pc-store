@@ -1,0 +1,19 @@
+@import 'vars.scss';
+@import 'mixins.scss';
+
+.system__content-inner {
+  display: flex;
+  justify-content: center;  
+  .system__content-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title {
+      padding: 3.5rem 0 2.5rem 0;
+    }
+  }
+  .system__content-description {
+    text-align: center;
+  }
+}

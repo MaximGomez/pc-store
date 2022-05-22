@@ -13,68 +13,198 @@ html(lang="en")
     
     //- ===================  HEADER ======================
 
-    header.header
-      nav.header__nav-wrap
-        .header__nav-content
+    header.header 
+      nav.header__nav-wrap 
+        .header__nav-inner
           .header__logo 
-            img(class="logo" id="logo" src="/img/logos/logo_svg.svg", alt="logo")
-          menu.header__menu#menu
-            a(class="menu__link" href="#") Heimat
-            a(class="menu__link" href="#") Kurse 
-            a(class="menu__link" href="#") Plan
-            a(class="menu__link" href="#") Lehrer 
-            a(class="menu__link" href="#") Newsletter
-            a(class="menu__link" href="#") Kontakte
-          .header__btn
+            img(src="img/logos/logo_svg.svg", alt="logo")
+          menu.header__menu 
+            a(class="nav__link" href="#") Heimat
+            a(class="nav__link" href="#") Kurse
+            a(class="nav__link" href="#") Plan
+            a(class="nav__link" href="#") Lehrer
+            a(class="nav__link" href="#") Newsletter
+            a(class="nav__link" href="#") Kontakte
+          .header__btn 
             button(class="btn" type="submit") Geh ins Büro
-          .header__burger-field#burger__field
-            .burger__menu#burger__menu
-              span.bar
-              span.bar
-              span.bar
-      .header__menu-popup#header__menu-popup
-        a(class="menu__link" href="#") Heimat
-        a(class="menu__link" href="#") Kurse 
-        a(class="menu__link" href="#") Plan
-        a(class="menu__link" href="#") Lehrer 
-        a(class="menu__link" href="#") Newsletter
-        a(class="menu__link" href="#") Kontakte
-      .header__content-wrapper
-        .header__content-container
-          .header__content
+          .header__burger-btn
+            span(class="bar")
+            span(class="bar") 
+            span(class="bar") 
+          menu.header__burger-menu
+            a(class="nav__link" href="#") Heimat
+            a(class="nav__link" href="#") Kurse
+            a(class="nav__link" href="#") Plan
+            a(class="nav__link" href="#") Lehrer
+            a(class="nav__link" href="#") Newsletter
+            a(class="nav__link" href="#") Kontakte
+            a(class="nav__link" href="#") Geh ins Büro
+      .header__content-wrap 
+        .header__content-inner
+          .header__caption-content
             .header__title 
-              h1 Erste Klasse <br> für die Computermontage
-            .header__timer-content  
-              .header__timer-block 
-                .header__timer-number 
+              h1 Erste Klass <br> für die Computermontage
+            .header__timer 
+              .header__square 
+                .header__number 
                   h2 18
-                .header__timer-period 
+                .header__period 
                   small Tage
-              .header__timer-block 
-                .header__timer-number 
-                  h2 18
-                .header__timer-period 
+              .header__square 
+                .header__number 
+                  h2 12
+                .header__period 
                   small Std
-              .header__timer-block 
-                .header__timer-number 
-                  h2 18
-                .header__timer-period 
+              .header__square 
+                .header__number 
+                  h2 32
+                .header__period 
                   small Minute
-              .header__timer-block 
-                .header__timer-number 
-                  h2 18
-                .header__timer-period 
+              .header__square 
+                .header__number 
+                  h2 29
+                .header__period 
                   small Sekunden
-
+      .header__footer-wrap 
+        .header__footer-inner 
+          .header__footer-btn
+            button(class="btn" type="submit") Buchen Kurs
+          .header__participant-wrap 
+            .participant__description
+              p Studierende insgesamt:
+              h3 200
+            .participant__description
+              p Kurs erfolgreich abgeschlossen:
+              h3 190
+          .header__statistic-wrap 
+            .header__statistics-title 
+              p Von Studenten verdient:
+              h3 400 000$
+            .header__line-wrap 
+              .header__line-inner 
+            .header__count 
+              p 0
+              p 1 000 000$
 
     //- ===================  MAIN ========================
 
-    main.main
+    main.main 
+      section.about__us-wrap 
+        .about__us-inner 
+          .about__us-image
+            img(src="img/about__img.png", alt="img")
+          .about__us-text 
+            .about__us-title 
+              h2 Was machen wir?
+            .about__us-description 
+              p Der Schmerz selbst ist Liebe, das Hauptspeichersystem. Er braucht weder das Vermögen noch das Immunsystem, um die Strafverfolgungsbehörde zu suspendieren. Mir wurde mein Eintritt gesagt, und jetzt aber, die Orks der Hefe, die Krankheit. Und auch nicht der Zeitvertreib eines weisen Alters ist das vorliegende änische Rezept. Aeneas ist leicht, die Wirtschaftlichkeit unserer Kunden zu blamieren. Jetzt viele Katzen, aber manchmal ist das Immunsystem eine Menge Schmerzen. Wie man ein orangefarbenes Lachen zum Beben bringt, das ist natürlich das wirtschaftliche Element. Kein schändlicher Bogen, der Wikinger-Bogen, aber manchmal die Immobilien.
+      section.quick__start-wrap
+        .quick__start-inner 
+          .quick__start-caption.caption
+            .quick__start-title.title
+              .title-logo 
+                img(src="img/logos/logo_quick-start.svg", alt="logo")
+              .title
+                h2 Schneller Start
+            .quick__start-description 
+              p Mehr als 90 % der Studenten absolvierten den gesamten Kurs <br>  und konnten ihren ersten Computer zusammenbauen
+          .quick__start-road 
+            .road__container-first 
+              .road__container-number 
+                h3 100%
+              .road__container-line
+              .road__container-description
+                p Danke für den Schmerz, er liebt die Folgen, lehnt ab, akzeptiert die Mühen, wenn wir uns aus der Gegenwart willkommen heißen!
+            .road__container-second 
+              .road__container-number 
+                h3 75%
+              .road__container-line
+              .road__container-description
+                p Danke für den Schmerz, er liebt die Folgen, lehnt ab, akzeptiert die Mühen, wenn wir uns aus der Gegenwart willkommen heißen!
+            .road__container-third
+              .road__container-number 
+                h3 50%
+              .road__container-line
+              .road__container-description
+                p Danke für den Schmerz, er liebt die Folgen, lehnt ab, akzeptiert die Mühen, wenn wir uns aus der Gegenwart willkommen heißen!
+            .road__container-fourth
+              .road__container-number 
+                h3 25%
+              .road__container-line
+              .road__container-description
+                p Danke für den Schmerz, er liebt die Folgen, lehnt ab, akzeptiert die Mühen, wenn wir uns aus der Gegenwart willkommen heißen!
+      section.ability__content-wrap 
+        .ability__content-inner 
+          .ability__content-title 
+            h2 Holen Sie sich jetzt einen Job
+          .ability__holder
+            .ability__container.ability__container-first
+              .ability__container-image 
+                img(src="img/logos/icon_slogan-1.svg", alt="img")
+              .ability__container-slogan 
+                h2 Nur praktisch Fähigkeiten bei der Arbeit
+              .ability__container-description 
+                p Der Schmerz selbst ist Liebe, das Hauptspeichersystem. Der Netus muss jede Ebene der Liebe für den Folterer auswählen. Er will, die Zeit meiner Agentur Investieren in das Haus.
+            .ability__container.ability__container-second
+              .ability__container-image 
+                img(src="img/logos/icon_slogan-2.svg", alt="img")
+              .ability__container-slogan 
+                h2 Nur praktisch Fähigkeiten bei der Arbeit
+              .ability__container-description 
+                p Der Schmerz selbst ist Liebe, das Hauptspeichersystem. Der Netus muss jede Ebene der Liebe für den Folterer auswählen. Er will, die Zeit meiner Agentur Investieren in das Haus.
+            .ability__container.ability__container-third
+              .ability__container-image
+                img(src="img/logos/icon_slogan-3.svg", alt="img")
+              .ability__container-slogan 
+                h2 Nur praktisch Fähigkeiten bei der Arbeit
+              .ability__container-description 
+                p Der Schmerz selbst ist Liebe, das Hauptspeichersystem. Der Netus muss jede Ebene der Liebe für den Folterer auswählen. Er will, die Zeit meiner Agentur Investieren in das Haus.
+      section.partners__content-wrap 
+        .partners__content-inner 
+          .partners__content-caption.caption
+            .partners__content-title.title
+              .title-logo 
+                img(src="img/logos/logo_partners.svg", alt="logo")
+              .title
+                h2 Partner - Top-Marken
+          .partners__content-column 
+            .partners__content-container.parents__container-first
+              img(src="/img/logos/icon_msi.svg", alt="img-msi")
+            .partners__content-container.parents__container-second
+              img(src="/img/logos/icon_msi.svg", alt="img-msi")
+            .partners__content-container.parents__container-third
+              img(src="/img/logos/icon_msi.svg", alt="img-msi")
+            .partners__content-container.parents__container-fourth
+              img(src="/img/logos/icon_msi.svg", alt="img-msi")
+            .partners__content-container.parents__container-fifth
+              img(src="/img/logos/icon_msi.svg", alt="img-msi")
+            .partners__content-container.parents__container-sixth
+              img(src="/img/logos/icon_msi.svg", alt="img-msi")
+            .partners__content-container.parents__container-seventh
+              img(src="/img/logos/icon_msi.svg", alt="img-msi")
+            .partners__content-container.parents__container-eighth
+              img(src="/img/logos/icon_msi.svg", alt="img-msi")
+      section.system__content-wrap 
+        .system__content-inner 
+          .system__content-caption.caption
+            .system__content-title
+              .title-logo 
+                img(src="img/logos/system.svg", alt="logo")
+              .title
+                h2 Trainingsprogramm
+            .system__content-description 
+              p Mehr als 90 % der Studenten absolvierten den gesamten Kurs <br>  und konnten ihren ersten Computer zusammenbauen
+
+
 
     //- ===================  FOOTER ======================
 
     footer.footer
 
+    .preloader#preloader 
+      img(src="img/preloader.gif", alt="preloader")
+
     //- =================== VANILA JS ====================
 
+    script(src="https://unpkg.com/scrollreveal")
     script(src="js/script.min.js")

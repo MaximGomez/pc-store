@@ -1,1 +1,34 @@
 @import 'vars.scss';
+@import 'mixins.scss';
+
+.about__us-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  .about__us-image {
+    // flex-basis: 40%;
+    min-width: 40%;
+    height: auto;
+
+    display: flex;
+    justify-content: flex-end;
+      
+    position: relative;
+    left: 0;
+    top: 15%;
+
+    // padding: 0 5rem 0 0;
+  }
+  .about__us-text {
+    flex-basis: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .about__us-description > p {
+      line-height: 1.75rem;
+    }
+  }
+}
