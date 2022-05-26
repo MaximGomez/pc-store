@@ -8,6 +8,10 @@
   color: $--main-color;
   font: $--normal-text;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     background: $--additional-gradient-color-hover;
   }
@@ -21,7 +25,28 @@
   color: $--main-color;
   font: $--normal-text;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     background: $--gradient-color-hover;
+  }
+}
+
+@mixin btn__white {
+  padding: 0.625rem 1.875rem;
+  border-radius: 3.125rem;
+  border: 0.05rem solid $--main-color;
+  background: none;
+  color: $--main-color;
+  font: $--normal-text;
+  cursor: pointer;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background: $--main-color-hover;
   }
 }

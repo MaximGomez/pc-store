@@ -1,0 +1,35 @@
+@import 'vars.scss';
+@import 'mixins.scss';
+
+.col__content {
+  width: 80%;
+  min-height: 65vh;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  .col__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .col__img > img {
+      border-radius: 50%; 
+    }
+    .col__title {
+      margin: 1.75rem 0 0 0;
+      h2 {
+        font: $--normal-text-bigger;
+      }
+    }
+    .col__description {
+      margin: .5rem 0 2rem 0;
+    }
+    .col__btn > .btn {
+      @include btn__white;
+    }
+  }
+}

@@ -52,11 +52,19 @@
       border-bottom: 0.05rem solid grey !important;
     }
   }
+
+  //
+
+  .col__content {
+    width: 100% !important;
+  }
 }
 
 // lg: 1024px
 
 @media screen and (max-width: 1024px) {
+  //
+
   .header__menu , .header__btn {
     display: none !important;
   }
@@ -92,10 +100,26 @@
     }
   }
 
+  //
+
+  .about__us-wrap {
+    padding: 1.5rem 0 !important;
+  }
+
   // 
 
   .road__container-first , .road__container-second , .road__container-third , .road__container-fourth {
-    margin: 2rem 0 0 0 !important;
+    margin: 2rem 0 2rem 0 !important;
+  }
+
+  //
+
+  .col__content {
+    flex-direction: column !important;
+    gap: 3.5rem;
+    flex-basis: 100% !important;
+
+    margin: 5rem 0;
   }
 }
 
@@ -129,6 +153,39 @@
       border-bottom: 0.05rem solid $--additional-color !important;
     }
   }
+
+  //
+
+  .system__text-wrap {
+    height: 150vh !important;
+    .system__text-description > p {
+      font: $--normal-text-mobile-sm !important;
+    }
+    .system__container-left {
+      padding: 0 3rem 0 0 !important;
+      &::before {
+        width: 1.5rem !important;
+      }
+    }
+    .system__container-right {
+      padding: 0 0 0 3rem !important;
+      &::before {
+        width: 1.5rem !important;
+      }
+    }
+  }
+
+  //
+
+  .footer__content-form {
+    width: 100% !important;
+  }
+  .footer__content-links {
+    flex-wrap: wrap !important;
+  }
+  form > .btn {
+    width: 40% !important;
+  }
 }
 
 /*      For small devices      */
@@ -137,6 +194,24 @@
   // .header__timer {
   //   grid-template-columns: repeat(1, 1fr) !important;
   // }
+  .system__text-wrap {
+    height: 175vh !important;
+    .system__text-description > p {
+      font: $--normal-text-mobile-sm !important;
+    }
+    .system__container-left {
+      padding: 0 1.2rem 0 0 !important;
+      &::before {
+        width: .75rem !important;
+      }
+    }
+    .system__container-right {
+      padding: 0 0 0 1.2rem !important;
+      &::before {
+        width: .75rem !important;
+      }
+    }
+  }
 }
 
 @media screen and (max-height: 480px) {

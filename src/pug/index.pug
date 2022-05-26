@@ -9,6 +9,15 @@ html(lang="en")
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
     link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet")
     title pc-store
+
+    //- =================== REMIX ICON ======================
+
+    link(href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet")
+
+    //- =================== ICON ======================
+      
+    <script src="https://kit.fontawesome.com/6420098d4f.js" crossorigin="anonymous"></script>
+
   body 
     
     //- ===================  HEADER ======================
@@ -17,14 +26,15 @@ html(lang="en")
       nav.header__nav-wrap 
         .header__nav-inner
           .header__logo 
-            img(src="img/logos/logo_svg.svg", alt="logo")
+            a(href="#")
+              img(src="img/logos/logo_svg.svg", alt="logo")
           menu.header__menu 
-            a(class="nav__link" href="#") Heimat
-            a(class="nav__link" href="#") Kurse
-            a(class="nav__link" href="#") Plan
-            a(class="nav__link" href="#") Lehrer
-            a(class="nav__link" href="#") Newsletter
-            a(class="nav__link" href="#") Kontakte
+            a(class="nav__link" href="#about-us") Heimat
+            a(class="nav__link" href="#quick__start") Kurse
+            a(class="nav__link" href="#ability__content") Plan
+            a(class="nav__link" href="#partners__content") Lehrer
+            a(class="nav__link" href="#system__content") Newsletter
+            a(class="nav__link" href="#col__content") Kontakte
           .header__btn 
             button(class="btn" type="submit") Geh ins Büro
           .header__burger-btn
@@ -32,12 +42,12 @@ html(lang="en")
             span(class="bar") 
             span(class="bar") 
           menu.header__burger-menu
-            a(class="nav__link" href="#") Heimat
-            a(class="nav__link" href="#") Kurse
-            a(class="nav__link" href="#") Plan
-            a(class="nav__link" href="#") Lehrer
-            a(class="nav__link" href="#") Newsletter
-            a(class="nav__link" href="#") Kontakte
+            a(class="nav__link" href="#about-us") Heimat
+            a(class="nav__link" href="#quick__start") Kurse
+            a(class="nav__link" href="#ability__content") Plan
+            a(class="nav__link" href="#partners__content") Lehrer
+            a(class="nav__link" href="#system__content") Newsletter
+            a(class="nav__link" href="#col__content") Kontakte
             a(class="nav__link" href="#") Geh ins Büro
       .header__content-wrap 
         .header__content-inner
@@ -89,7 +99,7 @@ html(lang="en")
     //- ===================  MAIN ========================
 
     main.main 
-      section.about__us-wrap 
+      section.about__us-wrap#about-us
         .about__us-inner 
           .about__us-image
             img(src="img/about__img.png", alt="img")
@@ -98,7 +108,7 @@ html(lang="en")
               h2 Was machen wir?
             .about__us-description 
               p Der Schmerz selbst ist Liebe, das Hauptspeichersystem. Er braucht weder das Vermögen noch das Immunsystem, um die Strafverfolgungsbehörde zu suspendieren. Mir wurde mein Eintritt gesagt, und jetzt aber, die Orks der Hefe, die Krankheit. Und auch nicht der Zeitvertreib eines weisen Alters ist das vorliegende änische Rezept. Aeneas ist leicht, die Wirtschaftlichkeit unserer Kunden zu blamieren. Jetzt viele Katzen, aber manchmal ist das Immunsystem eine Menge Schmerzen. Wie man ein orangefarbenes Lachen zum Beben bringt, das ist natürlich das wirtschaftliche Element. Kein schändlicher Bogen, der Wikinger-Bogen, aber manchmal die Immobilien.
-      section.quick__start-wrap
+      section.quick__start-wrap#quick__start
         .quick__start-inner 
           .quick__start-caption.caption
             .quick__start-title.title
@@ -112,28 +122,28 @@ html(lang="en")
             .road__container-first 
               .road__container-number 
                 h3 100%
-              .road__container-line
+              .road__container-line.road__container-first
               .road__container-description
                 p Danke für den Schmerz, er liebt die Folgen, lehnt ab, akzeptiert die Mühen, wenn wir uns aus der Gegenwart willkommen heißen!
             .road__container-second 
               .road__container-number 
                 h3 75%
-              .road__container-line
+              .road__container-line.road__container-second
               .road__container-description
                 p Danke für den Schmerz, er liebt die Folgen, lehnt ab, akzeptiert die Mühen, wenn wir uns aus der Gegenwart willkommen heißen!
             .road__container-third
               .road__container-number 
                 h3 50%
-              .road__container-line
+              .road__container-line.road__container-third
               .road__container-description
                 p Danke für den Schmerz, er liebt die Folgen, lehnt ab, akzeptiert die Mühen, wenn wir uns aus der Gegenwart willkommen heißen!
             .road__container-fourth
               .road__container-number 
                 h3 25%
-              .road__container-line
+              .road__container-line.road__container-fourth
               .road__container-description
                 p Danke für den Schmerz, er liebt die Folgen, lehnt ab, akzeptiert die Mühen, wenn wir uns aus der Gegenwart willkommen heißen!
-      section.ability__content-wrap 
+      section.ability__content-wrap#ability__content
         .ability__content-inner 
           .ability__content-title 
             h2 Holen Sie sich jetzt einen Job
@@ -159,7 +169,7 @@ html(lang="en")
                 h2 Nur praktisch Fähigkeiten bei der Arbeit
               .ability__container-description 
                 p Der Schmerz selbst ist Liebe, das Hauptspeichersystem. Der Netus muss jede Ebene der Liebe für den Folterer auswählen. Er will, die Zeit meiner Agentur Investieren in das Haus.
-      section.partners__content-wrap 
+      section.partners__content-wrap#partners__content
         .partners__content-inner 
           .partners__content-caption.caption
             .partners__content-title.title
@@ -184,25 +194,124 @@ html(lang="en")
               img(src="/img/logos/icon_msi.svg", alt="img-msi")
             .partners__content-container.parents__container-eighth
               img(src="/img/logos/icon_msi.svg", alt="img-msi")
-      section.system__content-wrap 
+      section.system__content-wrap#system__content
         .system__content-inner 
           .system__content-caption.caption
             .system__content-title
               .title-logo 
                 img(src="img/logos/system.svg", alt="logo")
               .title
-                h2 Trainingsprogramm
+                h2 Trainings programm
             .system__content-description 
               p Mehr als 90 % der Studenten absolvierten den gesamten Kurs <br>  und konnten ihren ersten Computer zusammenbauen
+          .system__text-wrap
+            .system__text-inner
+              .system__text-container.system__container-left.system__container-first
+                .system__text-title 
+                  small Woche №1
+                .system__text-description 
+                  p Schöner Teil des <br> Kurses was zum Erfolg beiträgt
+              .system__text-container.system__container-left.system__container-second
+                .system__text-title 
+                  small Woche №2
+                .system__text-description 
+                  p Schöner Teil des <br> Kurses was zum Erfolg beiträgt
+              .system__text-container.system__container-left.system__container-third
+                .system__text-title 
+                  small Woche №3
+                .system__text-description 
+                  p Schöner Teil des <br> Kurses was zum Erfolg beiträgt
+              .system__text-container.system__container-left.system__container-fourth
+                .system__text-title 
+                  small Woche №4
+                .system__text-description 
+                  p Schöner Teil des <br> Kurses was zum Erfolg beiträgt
+            .system__line 
+            .system__text-inner 
+              .system__text-container.system__container-right.system__container-fifth
+                .system__text-title 
+                  small Woche №5
+                .system__text-description 
+                  p Schöner Teil des <br> Kurses was zum Erfolg beiträgt
+              .system__text-container.system__container-right.system__container-sixth
+                .system__text-title 
+                  small Woche №6
+                .system__text-description 
+                  p Schöner Teil des <br> Kurses was zum Erfolg beiträgt
+              .system__text-container.system__container-right.system__container-seventh
+                .system__text-title 
+                  small Woche №7
+                .system__text-description 
+                  p Schöner Teil des <br> Kurses was zum Erfolg beiträgt
+      section.col__content-wrap#col__content
+        .col__content-inner
+          .col__content-caption.caption
+            .col__content-title.title
+              .title-logo 
+                img(src="img/logos/lector.svg", alt="logo")
+              .title
+                h2 Deine Lehrer
+          .col__content 
+            .col__container 
+              .col__img 
+                img(src="img/lector-first.jpg", alt="img")
+              .col__title 
+                h2 Dmitri Iwanow
+              .col__description 
+                p Spezialist für Grafikkarten
+              .col__btn 
+                button(class="btn" type="submit") Biografie
+            .col__container 
+              .col__img 
+                img(src="img/lector-second.jpg", alt="img")
+              .col__title 
+                h2 Dmitri Iwanow
+              .col__description 
+                p Spezialist für Grafikkarten
+              .col__btn 
+                button(class="btn" type="submit") Biografie
+            .col__container 
+              .col__img 
+                img(src="img/third.jpg", alt="img")
+              .col__title 
+                h2 Dmitri Iwanow
+              .col__description 
+                p Spezialist für Grafikkarten
+              .col__btn 
+                button(class="btn" type="submit") Biografie
+                
+      //- ===================  FOOTER ======================
 
-
-
-    //- ===================  FOOTER ======================
-
-    footer.footer
+      footer.footer-wrap 
+        .footer__inner 
+          .footer__content-title.title
+            h2 Artikel jede Woche
+          .footer__content-description 
+            p Mehr als 90 % der Studenten absolvierten den gesamten Kurs <br>  und konnten ihren ersten Computer zusammenbauen
+          .footer__content-form 
+            form(action="#") 
+              input(class="input" placeholder="E-mail" type="email") 
+              button(class="btn" type="submit") Abonnieren 
+          .footer__content-links 
+            .footer__link-container            
+              a(class="footer__link" href="https://www.instagram.com/") 
+                i(class="fab fa-instagram")
+            .footer__link-container  
+              a(class="footer__link" href="https://www.facebook.com/") 
+                <i class="fab fa-facebook-f"></i>
+            .footer__link-container
+              a(class="footer__link" href="https://web.telegram.org/k/") 
+                <i class="fab fa-telegram-plane"></i>
+            .footer__link-container
+              a(class="footer__link" href="https://www.youtube.com/") 
+                <i class="fab fa-youtube"></i>
+          .footer__author
+            small Autor: Maxim Poliakovskij
 
     .preloader#preloader 
       img(src="img/preloader.gif", alt="preloader")
+
+    a(class="scrollup" id="scroll-up" href="#" ) <i class="ri-arrow-up-s-line scrollup__icon"></i>
 
     //- =================== VANILA JS ====================
 
